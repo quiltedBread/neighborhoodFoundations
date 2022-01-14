@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/scholar_house.png" alt="scholar_house">
+        <section>
+            <h2>Scholar House</h2>
+            <p>Northern Kentucky Scholar House is a comprehensive self-sufficiency program that provides affordable
+                housing, child development services, and case management support for single parents as they pursue a
+                degree in higher education. This property consists of 42 2Br units and 6 3Br units and on-site child development center. <a href="../assets/documents/scholar_house_flyer.pdf" target="_blank">View Brochure</a></p>
+            <p>Single parents enrolled in Northern Kentucky Scholar House and attending school are offered support in:
+            </p>
+            <ul>
+                <li>Housing, where Section 8 subsidy will keep housing costs low for 48 apartments.</li>
+                <li>Educational and economic support program, where parents connected with other existing economic
+                    supports, such as childcare assistance, food stamps, work study programs, financial aid, and
+                    provided life skills consisting of on-site workshops and activities that support parents in their
+                    roles as students, parents, heads of household, and future employees.</li>
+                <li>On-site Child Care, where children from 6 weeks to school age receive care in an enriching
+                    environment (licensed and STAR rated Center) while the parent is in school.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Eligibility</h3>
+            <ul>
+                <li>18+ Years of Age</li>
+                <li>Single parent with primary custody of their child/children</li>
+                <li>A full-time student or admitted for full-time enrollment in an approved post-secondary institution (NKU, Gateway Community & Technical College, Cincinnati State)</li>
+                <li>Agree to attend life skills workshops and monthly meeting with a case manager</li>
+                <li>Children under the age of 5 must enroll in the Scholar House Child Development Center</li>
+                <li>Must be eligible for Section 8 subsidized housing</li>
+                <li>Must be highly motivated</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Why We Do It</h3>
+            <p>Research suggests that post-secondary education is increasingly important to obtain a job that offers family-supporting wages, but significant challenges to college completion face students who are also parents. Research has also demonstrated a connection between maternal education and child outcomes. The two-generation approach of Scholar House invests in educational opportunities for both parents and children together, each reinforcing the other.</p>
+            <p>This model is a comprehensive, best-practice program committed to excellence and innovation. There are currently seven other Scholar House projects in the Commonwealth of Kentucky with the founding program in Lexington. Kentucky Housing Corporation collects necessary data on all the projects to track participation and results. Last fiscal year, the existing seven Scholar Houses served 553 families, with 79 adults earning a degree.</p>  
+        </section>
+        <section>
+            <h3>Additional Information</h3>
+            <p>Northern Kentucky Scholar House is strategically located near the urban campus of Gateway Community and Technical College and on the bus line for access to Northern Kentucky University and other post-secondary institutions. Many partners are coming together to ensure broad community support and a strong pipeline of parents who will benefit from this opportunity. Other partners include the Kentucky Housing Corporation, Cincinnati State, HeadStart, LISC, and local high schools.</p>
+            <p>The regional importance of this project relates to our ability to educate a workforce for tomorrow, including our most vulnerable citizens. The Scholar House Project provides the support and pathway to labor market success for those who, traditionally, have experienced many barriers to complete education beyond high school. Not only will parents be able to pursue skills and complete their studies to improve their economic security and stability, but simultaneously they will be ensuring their children are on a path from the earliest age to engage in lifelong learning.</p>
+            <p>*Northern Kentucky Scholar House is a collaborative project offered by Brighton Center and the Neighborhood Foundations.</p>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <div><b>Site Manager</b></div>
+            <div>Beth Schweinzger</div>
+            <div><a href="mailto:bschweinzger@neighborhoodfoundations.com">bschweinzger@neighborhoodfoundations.com</a></div>
+            <div><a href="tel:859-581-2533;ext=207">859-581-2533 (Ext. 207)</a></div>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/clifton_hills.jpg" alt="clifton_hills">
+        <section>
+            <h2>Clifton Hills</h2>
+            <p>Clifton Hills is a 32-unit senior development located at 29 18th Street, Newport. This is a completely
+                Non-Smoking Property! This new facility is energy efficient and is the first multi-family LEED
+                (Leadership in Environmental Energy Design) Certified project in Northern Kentucky.</p>
+        </section>
+        <section>
+            <h3>Amenities</h3>
+            <ul>
+                <li>Off-street parking</li>
+                <li>New appliances</li>
+                <li>Laundry hook-ups</li>
+                <li>Exercise room</li>
+                <li>Community room with computers</li>
+                <li>Community laundry room</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Eligibility</h3>
+            <ul>
+                <li>55+ Years of Age</li>
+                <li>Good Rental History</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pricing</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Max Rent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Br</td>
+                        <td>$560</td>
+                    </tr>
+                    <tr>
+                        <td>2 Br</td>
+                        <td>$685</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <div><b>Site Manager</b></div>
+            <div>Peggy Bramble</div>
+            <div><a href="mailto:pbramble@neighborhoodfoundations.com">pbramble@neighborhoodfoundations.com</a></div>
+            <div><a href="tel:859-581-2533;ext=302">859-581-2533 (Ext. 302)</a></div>
+        </section>
+        <section>
+            <h3>Applications for the waiting list are available at:</h3>
+            <div><a href="http://maps.google.com/?q=1359 Grand Ave. Newport, KY">1359 Grand Ave. Newport, KY</a></div>
+            <div><a href="tel:859-581-2533;ext=302">859-581-2533 (Ext. 302)</a></div>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

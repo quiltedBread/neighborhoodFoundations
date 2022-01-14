@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/community_center.jpg" alt="community_center">
+        <section>
+            <h2>Marguerite Robinson Community Center</h2>
+            <p>There is a little known secret that is quite a benefit to the residents of Newport – The Marguerite Robinson Community Center. The Center is located at <a href="http://maps.google.com/?q=400 West Sixth St. Newport, KY">400 West Sixth Street.</a></p>
+            <p>The Center provides a wide variety of recreational programs and other services not only to our residents, but also the residents of the City of Newport.</p>
+            <p>Gymnasium space is available for rent. Please contact Beth at <a href="tel:859-581-2533;ext=207">859-581-2533 (Ext. 207)</a>.</p>
+        </section>
+        <section>
+            
+            <section>
+                <h3>Contact</h3>
+                <div><b>Site Manager</b></div>
+                <div>Beth Schweinzger</div>
+                <div><a href="mailto:bschweinzger@neighborhoodfoundations.com">bschweinzger@neighborhoodfoundations.com</a></div>
+                <div><a href="tel:859-581-2533;ext=207">859-581-2533 (Ext. 207)</a></div>
+            </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

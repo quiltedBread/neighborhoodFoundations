@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/corpus_christi.jpg" alt="corpus_christi">
+        <section>
+            <h2>Corpus Christi</h2>
+            <p>With the completion of its construction in 1902, Corpus Christi Catholic Church quickly rose to become
+                one of Newport’s most celebrated landmarks. Located in the heart of the city , Corpus Christi’s Ornate
+                façade greeted parishioners for nearly a century. In 1999 it merged with St. Francis de Sales, St.
+                Stephen, and St. Vincent de Paul to create a new entity called Holy Spirit. Then in October of 2006
+                exactly Seven years latter a renovated Corpus Christi once again opened its doors not as a place to
+                pray, but as a place to live.
+            </p>
+            <p>Corpus Christi apartments range from 628 to 767 square feet. The twenty apartments include ten townhomes,
+                six classroom units, and four 3rd floor units. Also, featuring one handicapped accessible unit, and one
+                handicapped adaptable unit.</p>
+        </section>
+        <section>
+            <h3>Amenities</h3>
+            <ul>
+                <li>Central Air</li>
+                <li>Off-Street Parking</li>
+                <li>Security Cameras</li>
+                <li>Lobby & Community Area</li>
+                <li>Two Outdoor Courtyard Patios</li>
+                <li>Full Kitchen</li>
+                <li>Central Laundry Room</li>
+                <li>Washer and Dryer hookups</li>
+                <li>Basement Storage</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Eligibility</h3>
+            <ul>
+                <li>55+ Years or Age</li>
+                <li>Good Rental History</li>
+                <li>Individuals must meet certain income requirements</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pricing</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Bedrooms</th>
+                        <th>Max Rent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Townhouse/Nave</td>
+                        <td>1</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Classroom/Tower</td>
+                        <td>2</td>
+                        <td>$525</td>
+                    </tr>
+                    <tr>
+                        <td>Third Floor/Large</td>
+                        <td>3</td>
+                        <td>$550</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Rent is based on a portion of annual, adjusted income</li>
+                <li>Maximum rents are subject to change annually.</li>
+                <li>Resident must pay electric</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <div><b>Site Manager</b></div>
+            <div>Beth Schweinzger</div>
+            <div><a href="mailto:bschweinzger@neighborhoodfoundations.com">bschweinzger@neighborhoodfoundations.com</a></div>
+            <div><a href="tel:859-581-2533;ext=207">859-581-2533 (Ext. 207)</a></div>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

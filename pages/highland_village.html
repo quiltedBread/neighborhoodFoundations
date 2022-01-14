@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/highland_village.webp" alt="highland_village">
+        <section>
+            <h2>Highland Village</h2>
+            <p>Highland Village is Highland Heights' Premier Senior Luxury Living Community. This community features 104
+                individual one bedroom apartments, and an
+                additional 7, 2Br, (single story) duplex style units with an attached garage. We stopped at
+                nothing to load this community with "Top-notch" amenities that will spoil you, and your guest. Want more
+                information? Give us a call!</p>
+            <p></p>
+        </section>
+        <section>
+            <h3>Community Amenities</h3>
+            <ul>
+                <li>Laundry Facilities</li>
+                <li>Health Care Office</li>
+                <li>Hair and Nail Salon</li>
+                <li>Community Gathering Room</li>
+                <li>Private Meeting Rooms</li>
+                <li>Fitness Center</li>
+                <li>Computer Room</li>
+                <li>WIFI(common areas)</li>
+                <li>Resident and Visitor Parking</li>
+                <li>Courtyard</li>
+                <li>Walking Paths</li>
+                <li>Vegetable Garden</li>
+                <li>Storage Lockers</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Unit Ammenities</h3>
+            <ul>
+                <li>Eat-In-Kitchen</li>
+                <li>Range, Refrigerator/Freezer, and Dishwasher</li>
+                <li>Double Bowl Sink</li>
+                <li>W/D Hookups</li>
+                <li>Ceiling Fans</li>
+                <li>Programmable Thermostat</li>
+                <li>Low-Flow Bathroom Fixtures</li>
+                <li>Patio/Balcony</li>
+                <li>Garage(duplexes)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Eligibility</h3>
+            <ul>
+                <li>55+ Years of Age</li>
+                <li>Individual must meet certain income requirements</li>
+                <li>Good Rental History</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pricing</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Max Rent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Br</td>
+                        <td>$525</td>
+                    </tr>
+                    <tr>
+                        <td>2 Br</td>
+                        <td>$660</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <div><b>Site Manager</b></div>
+            <div>Kelly Speier</div>
+            <div><a href="mailto:kspeier@neighborhoodfoundations.com">kspeier@neighborhoodfoundations.com</a></div>
+            <div><a href="tel:859-581-2533;ext=220">859-581-2533 (Ext. 220)</a></div>
+        </section>
+        <section>
+            <h3>Applications</h3>
+            <p>Highland Village will be accepting applications starting Friday, January 15, 2021. this is for the
+                two-bedroom waiting list only. application forms are available Monday - Friday (except holidays),
+                between 9:00 a.m. and 3:30 p.m. at the Highland Village management office located at <a href="http://maps.google.com/?q=515 main avenue,
+                highland heights, ky" >515 Main Ave, Highland Heights, KY.</a></p>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

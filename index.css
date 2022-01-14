@@ -1,0 +1,85 @@
+:root {
+    --green: #5f8526;
+    --brown: #83503f;
+    --gray: #c5ceb2;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #2c2c2c;
+}
+h1 {
+    font-size: 2rem;
+}
+h1,h2,h3 {
+    color: var(--brown)
+}
+a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+a :hover {
+    color: var(--brown)
+}
+header {
+    display: flex;
+    font-size: x-large;
+    padding: 6px 16px;
+    top: 0;
+    border-bottom: 1px solid var(--gray)
+}
+header img {
+    height: 70px;
+}
+header a {
+    text-decoration: none;
+    color: var(--brown);
+}
+nav {
+    font-size: x-large;
+    color: var(--brown)
+}
+nav li {
+    padding: 16px;
+    border-bottom: 1px solid var(--gray)
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    padding: 16px;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    /* display: inline-block; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 16px;
+}
+.header-title {
+    margin: auto;
+}
+#mobile-menu {
+    display: none;
+    /* background-color: lightgray; */
+
+}
+.card {
+    display: flex;
+    padding: 16px;
+    background-color: lightgray;
+    margin-bottom: 16px;
+}
+.card img {
+    height: 100%;
+}
+.card div > * {
+    display: block;
+}

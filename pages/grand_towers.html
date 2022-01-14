@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/grand_towers.jpg" alt="grand_towers">
+        <section>
+            <h2>Grand Towers</h2>
+            <p>Grand Towers is a high-rise apartment building designed specifically for senior living. A beautiful
+                resident lounge on the 11th floor offers spectacular views of downtown Cincinnati, and bingo, cards,
+                crafts, and movies are offered throughout the week in the Community Room. Multi-million dollar
+                renovations and of the apartments, exterior and common areas makes Grand Towers perfect residence for
+                the young at heart!</p>
+            <p>All of the 139 units in Grand Towers are one-bedroom apartments that have been completely remodeled in recent years, with 11 being fully handicapped accessible.</p>
+        </section>
+        <section>
+            <h3>Amenities</h3>
+            <ul>
+                <li>Community room & resident lounge</li>
+                <li>Library and computer room</li>
+                <li>Beauty Salon</li>
+                <li>Billiards Room</li>
+                <li>On-site maintenance and management staff</li>
+                <li>Laundry Facilities</li>
+                <li>Full Kitchen</li>
+                <li>Variety of on-going programs, services and activity</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Eligibility</h3>
+            <ul>
+                <li>55+ Years of Age</li>
+                <li>Good Rental History</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pricing</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Max Rent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Efficiency</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>1 Br</td>
+                        <td>$575</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Rent based off 30% of Income</li>
+                <li>Water & Sewer Included</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <div><b>Site Manager</b></div>
+            <div>Peggy Bramble</div>
+            <div><a href="mailto:pbramble@neighborhoodfoundations.com">pbramble@neighborhoodfoundations.com</a></div>
+            <div><a href="tel:859-581-2533;ext=302">859-581-2533 (Ext. 302)</a></div>
+        </section>
+        <section>
+            <h3>Applications for the waiting list are available at:</h3>
+            <div><a href="http://maps.google.com/?q=1359 Grand Ave. Newport, KY">1359 Grand Ave. Newport, KY</a></div>
+            <div><a href="tel:859-581-2533;ext=302">859-581-2533 (Ext. 302)</a></div>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>

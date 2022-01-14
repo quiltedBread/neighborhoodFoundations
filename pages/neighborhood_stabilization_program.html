@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
+        <div class="header-title">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <nav role="navigation">
+            <ul onclick="toggleMenu()">
+                <li><a href="/index.html#services">Services</a></li>
+                <li><a href="/index.html#properties">Properties</a></li>
+                <li><a href="/index.html#community">Community</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="../assets/images/neighborhood_stabilization_program.webp" alt="neighborhood_stabilization_program">
+        <section>
+            <h2>Neighborhood Stabilization Program</h2>
+            <p>Neighborhood Stabilization funding allowed us to construct eight single-family affordable rental homes. Seven
+                of these homes have three bedrooms, and one is a two-bedroom unit. Section 8 Vouchers are accepted.</p>
+            <section>
+               <h3>Applicant Eligibility</h3>
+               <ul>
+                   <li>Complete application</li>
+                   <li>Must be able to verify income</li>
+                   <li>Eligible families cannot earn more than 50% of the Area Median Income</li>
+                   <li>Have good rental history</li>
+               </ul>
+            </section>
+        </section>
+    </main>
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("mobile-menu")
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</html>
