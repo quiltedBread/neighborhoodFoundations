@@ -10,6 +10,11 @@ body {
 }
 h1 {
     font-size: 2rem;
+    position: relative;
+}
+h1 > a {
+    position: absolute;
+    top: -1rem;
 }
 h1,h2,h3 {
     color: var(--brown)
@@ -19,8 +24,13 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
-a :hover {
-    color: var(--brown)
+a:hover {
+    text-decoration: underline;
+}
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
 }
 header {
     display: flex;
@@ -33,7 +43,6 @@ header img {
     height: 70px;
 }
 header a {
-    text-decoration: none;
     color: var(--brown);
 }
 nav {
@@ -45,8 +54,7 @@ nav li {
     border-bottom: 1px solid var(--gray)
 }
 nav a {
-    text-decoration: none;
-    color: inherit;
+    color: var(--brown);
 }
 main {
     padding: 16px;
@@ -55,7 +63,6 @@ img {
     max-width: 100%;
 }
 ul {
-    /* display: inline-block; */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -66,20 +73,53 @@ li {
 .header-title {
     margin: auto;
 }
+.menu-button:hover {
+    text-decoration: none;
+}
 #mobile-menu {
     display: none;
-    /* background-color: lightgray; */
-
 }
-.card {
-    display: flex;
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+img.footer {
+    width: 70%;
+    max-width: 250px;
     padding: 16px;
-    background-color: lightgray;
+}
+
+
+
+
+
+
+.card {
+    padding: 16px;
     margin-bottom: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
 }
-.card img {
-    height: 100%;
+button {
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: var(--green);
+    cursor: pointer;
+    width: 50%;
 }
-.card div > * {
-    display: block;
+footer {
+    text-align: center;
+}
+
+::selection {
+    background: var(--green);
+    color: white;
+  }
+::-moz-selection {
+    background: var(--green);
+    color: white;
 }
