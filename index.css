@@ -8,6 +8,9 @@ body {
     font-family: 'Arial', sans-serif;
     color: #2c2c2c;
 }
+main {
+    padding: 16px;
+}
 h1 {
     font-size: 2rem;
     position: relative;
@@ -56,19 +59,25 @@ nav li {
 nav a {
     color: var(--brown);
 }
-main {
-    padding: 16px;
-}
+
 img {
     max-width: 100%;
 }
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 0px;
 }
-li {
+ul li {
     margin: 16px;
+}
+ul.checked {
+    padding-left: 16px;
+}
+ul.checked li::before {
+    font-family: 'FontAwesome';
+    content: '\f058';
+    margin: 0 0.5em 0 -1.5em;
+    color: var(--green);
 }
 .header-title {
     margin: auto;
@@ -90,7 +99,19 @@ img.footer {
     max-width: 250px;
     padding: 16px;
 }
-
+.image-container {
+    position: relative;
+}
+.image-text {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    opacity: .7;
+    font-size: small;
+}
 
 
 
@@ -110,9 +131,14 @@ button {
     background-color: var(--green);
     cursor: pointer;
     width: 50%;
+    border-radius: 6px;
+}
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 footer {
     text-align: center;
+    color: var(--green)
 }
 
 ::selection {
