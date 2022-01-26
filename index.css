@@ -8,8 +8,16 @@ body {
     font-family: 'Arial', sans-serif;
     color: #2c2c2c;
 }
+main {
+    padding: 16px;
+}
 h1 {
     font-size: 2rem;
+    position: relative;
+}
+h1 > a {
+    position: absolute;
+    top: -1rem;
 }
 h1,h2,h3 {
     color: var(--brown)
@@ -19,8 +27,13 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
-a :hover {
-    color: var(--brown)
+a:hover {
+    text-decoration: underline;
+}
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
 }
 header {
     display: flex;
@@ -31,9 +44,9 @@ header {
 }
 header img {
     height: 70px;
+    box-shadow: none;
 }
 header a {
-    text-decoration: none;
     color: var(--brown);
 }
 nav {
@@ -45,41 +58,100 @@ nav li {
     border-bottom: 1px solid var(--gray)
 }
 nav a {
-    text-decoration: none;
-    color: inherit;
+    color: var(--brown);
 }
-main {
-    padding: 16px;
-}
+
 img {
     max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 ul {
-    /* display: inline-block; */
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 0px;
 }
-li {
+ul li {
     margin: 16px;
+}
+ul.checked {
+    padding-left: 16px;
+}
+ul.checked li::before {
+    font-family: 'FontAwesome';
+    content: '\f058';
+    margin: 0 0.5em 0 -1.5em;
+    color: var(--green);
 }
 .header-title {
     margin: auto;
 }
+.menu-button:hover {
+    text-decoration: none;
+}
 #mobile-menu {
     display: none;
-    /* background-color: lightgray; */
-
+}
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+img.footer {
+    width: 70%;
+    max-width: 250px;
+    padding: 16px;
+}
+.image-container {
+    position: relative;
+    padding-bottom: 5px;
+    max-width: 500px;
+}
+.image-text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    opacity: .7;
+    font-size: small;
+    top: 5px;
+    left: 5px;
+}
+.open {
+    background-color: green;
 }
 .card {
-    display: flex;
     padding: 16px;
-    background-color: lightgray;
-    margin-bottom: 16px;
+    margin: 16px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.card img {
-    height: 100%;
+button {
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: var(--green);
+    cursor: pointer;
+    width: 50%;
+    border-radius: 6px;
 }
-.card div > * {
-    display: block;
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+footer {
+    margin-top: 16px;
+    text-align: center;
+    color: var(--green)
+}
+footer img {
+    box-shadow: none;
+    border-top: 1px solid var(--green)
+}
+
+::selection {
+    background: var(--green);
+    color: white;
+  }
+::-moz-selection {
+    background: var(--green);
+    color: white;
 }
