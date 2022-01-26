@@ -44,6 +44,7 @@ header {
 }
 header img {
     height: 70px;
+    box-shadow: none;
 }
 header a {
     color: var(--brown);
@@ -62,6 +63,7 @@ nav a {
 
 img {
     max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 ul {
     list-style: none;
@@ -101,28 +103,27 @@ img.footer {
 }
 .image-container {
     position: relative;
+    padding-bottom: 5px;
+    max-width: 500px;
 }
 .image-text {
     position: absolute;
-    top: 5px;
-    left: 5px;
     background-color: black;
     color: white;
     padding: 8px 10px;
     opacity: .7;
     font-size: small;
+    top: 5px;
+    left: 5px;
 }
-
-
-
-
-
+.open {
+    background-color: green;
+}
 .card {
     padding: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    max-width: 300px;
 }
 button {
     border: none;
@@ -137,8 +138,13 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 footer {
+    margin-top: 16px;
     text-align: center;
     color: var(--green)
+}
+footer img {
+    box-shadow: none;
+    border-top: 1px solid var(--green)
 }
 
 ::selection {
