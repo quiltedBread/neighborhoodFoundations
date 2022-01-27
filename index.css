@@ -11,6 +11,10 @@ body {
 main {
     padding: 16px;
 }
+main > img {
+    display: block;
+    margin: auto;
+}
 h1 {
     font-size: 2rem;
     position: relative;
@@ -60,6 +64,10 @@ nav li {
 nav a {
     color: var(--brown);
 }
+hr {
+    border-top: 1px solid var(--green);
+    margin: 24px;
+}
 
 img {
     max-width: 100%;
@@ -84,11 +92,15 @@ ul.checked li::before {
 .header-title {
     margin: auto;
 }
+.menu-button {
+    font-size: xx-large;
+}
 .menu-button:hover {
     text-decoration: none;
 }
 #mobile-menu {
     display: none;
+    z-index: 2;
 }
 img.rounded {
     object-fit: cover;
@@ -138,13 +150,12 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 footer {
-    margin-top: 16px;
+    padding: 0 16px;
     text-align: center;
-    color: var(--green)
+    color: var(--green);
 }
 footer img {
     box-shadow: none;
-    border-top: 1px solid var(--green)
 }
 
 ::selection {
@@ -154,4 +165,25 @@ footer img {
 ::-moz-selection {
     background: var(--green);
     color: white;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 16px;
+}
+thead tr {
+    background-color: var(--green);
+    color: #ffffff;
+    text-align: left;
+}
+th, td {
+    padding: 12px 24px;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
