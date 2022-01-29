@@ -9,11 +9,11 @@ body {
     color: #2c2c2c;
 }
 main {
-    padding: 16px;
+    padding: 0 16px;
 }
 main > img {
     display: block;
-    margin: auto;
+    margin: 16px auto;
 }
 h1 {
     font-size: 2rem;
@@ -51,6 +51,10 @@ header img {
     box-shadow: none;
 }
 header a {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--brown);
 }
 nav {
@@ -137,6 +141,25 @@ img.footer {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.card i {
+    margin-left: 8px;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border: thin solid var(--gray);
+    border-radius: 6px;
+    padding: 16px;
+}
+.contact-icons {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.contact-icons a {
+    margin-left: 16px;
+}
 button {
     border: none;
     padding: 8px;
@@ -155,6 +178,7 @@ footer {
     color: var(--green);
 }
 footer img {
+    margin-bottom: 8px;
     box-shadow: none;
 }
 
