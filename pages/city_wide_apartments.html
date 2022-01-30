@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Neighborhood Foundations - City Wide Apartments</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../index.css">
-    <title>Neighborhood Foundations - Neighborhood Stabilization Program</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">☰</a>
-        <div class="header-title">
-            <a href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
-        </div>
+      <div class="header-title">
+        <a href="../index.html"
+          ><img src="../assets/images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()"
+        >☰</a
+      >
     </header>
     <section id="mobile-menu">
-        <nav role="navigation">
-            <ul onclick="toggleMenu()">
-                <li><a href="/index.html#community">Community</a></li>
-                <li><a href="/index.html#services">Services</a></li>
-                <li><a href="/index.html#properties">Properties</a></li>
-                <li><a href="/index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav role="navigation">
+        <ul onclick="toggleMenu()">
+          <li><a href="/index.html#services">Services</a></li>
+          <li><a href="/index.html#properties">Properties</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </section>
     <main>
-        <img src="../assets/images/city_wide_apartments.webp" alt="city_wide_apartments">
-        <section>
-            <h2>City Wide Apartments</h2>
-            <p>City-Wide Apartments represent the largest scattered site development undertaken by Neighborhood
-                Foundations. It includes a combination of renovated and newly constructed units located throughout the
-                city. Completed as three separate properties (Liberty, Central, and City-Wide), this entire development
-                was part of the HOPE VI Revitalization effort.</p>
-        </section>
-        <section>
-            <h3>Amenities</h3>
-            <ul class="checked">
-                <li>Central Air</li>
-                <li>Off-Street Parking</li>
-                <li>Individual Yard Space</li>
-                <li>Full Kitchen</li>
-                <li>Additional Storage</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Eligibility</h3>
-            <ul class="checked">
-                <li>18+ Years of Age</li>
-                <li>Good Rental History</li>
-                <li>Favorable Credit</li>
-                <li>Individuals must meet certain income requirements</li>
-                <li>Minimum One-Year Lease</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Pricing</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Bedrooms</th>
-                        <th>Max Rent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>$550</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>$650</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>$900</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>$1007</td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul>
-                <li>* Rent based off 30% of Income</li>
-                <li>* Water & Sewer Included</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contact</h3>
-            <div><b>Site Manager</b></div>
-            <div>Amy Sabin</div>
-            <div><a href="mailto:asabin@neighborhoodfoundations.com">asabin@neighborhoodfoundations.com</a></div>
-            <div><a href="tel:859-581-2533;ext=202">859-581-2533 (Ext. 202)</a></div>
-        </section>
+      <img
+        src="../assets/images/city_wide_apartments.webp"
+        alt="city_wide_apartments"
+      />
+      <section>
+        <h2>City Wide Apartments</h2>
+        <p>
+          City-Wide Apartments represent the largest scattered site development
+          undertaken by Neighborhood Foundations. It includes a combination of
+          renovated and newly constructed units located throughout the city.
+          Completed as three separate properties (Liberty, Central, and
+          City-Wide), this entire development was part of the HOPE VI
+          Revitalization effort.
+        </p>
+      </section>
+      <section>
+        <h3>Amenities</h3>
+        <ul class="checked">
+          <li>Central Air</li>
+          <li>Off-Street Parking</li>
+          <li>Individual Yard Space</li>
+          <li>Full Kitchen</li>
+          <li>Additional Storage</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Eligibility</h3>
+        <ul class="checked">
+          <li>18+ Years of Age</li>
+          <li>Good Rental History</li>
+          <li>Favorable Credit</li>
+          <li>Individuals must meet certain income requirements</li>
+          <li>Minimum One-Year Lease</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Pricing</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Bedrooms</th>
+              <th>Max Rent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>$550</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$650</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$900</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>$1007</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>* Rent based off 30% of Income</li>
+          <li>* Water & Sewer Included</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <div class="contact">
+            <div>
+                <div><b>Site Manager</b></div>
+                <div>Amy Sabin</div>
+            </div>
+            <div class="contact-icons">
+                <a href="mailto:asabin@neighborhoodfoundations.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:859-581-2533;ext=202"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+      </section>
     </main>
-
-</body>
-<script>
+    <footer>
+        <hr>
+        <img src="../assets/images/nmhf_han_logo.jpg" alt="logo">
+        <a href="http://maps.google.com/?q=30 E 8th St. Newport, KY">
+            <address>
+                <div>30 E 8th St. P.O. Box 72459</div>
+                <div>Newport, KY 41071</div>
+            </address>
+        </a>
+        <a href="tel:859-581-2533">
+            <p><i class="fas fa-phone"></i> 859-581-2533</p>
+        </a>
+        <a href="tel:859-581-9009">
+            <p><i class="fas fa-fax"></i></i> 859-581-9009</p>
+        </a>
+        <a href="tel:859-581-3181">
+            <p><i class="fas fa-deaf"></i> 859-581-3181</p>
+        </a>
+        <p>© 2023 Neighborhood Foundations</p>
+    </footer>
+  </body>
+  <script>
     function toggleMenu() {
-        var menu = document.getElementById("mobile-menu")
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
+      var menu = document.getElementById("mobile-menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
     }
-</script>
-
+  </script>
 </html>

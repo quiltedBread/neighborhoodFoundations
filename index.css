@@ -1,213 +1,222 @@
 :root {
-    --green: #5f8526;
-    --brown: #83503f;
-    --gray: #c5ceb2;
+  --green: #5f8526;
+  --brown: #83503f;
+  --gray: #c5ceb2;
 }
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #2c2c2c;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #2c2c2c;
 }
 main {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 main > img {
-    display: block;
-    margin: 16px auto;
+  display: block;
+  margin: 16px auto;
 }
 h1 {
-    font-size: 2rem;
-    position: relative;
+  font-size: 2rem;
+  position: relative;
 }
 h1 > a {
-    position: absolute;
-    top: -1rem;
+  position: absolute;
+  top: -1rem;
 }
-h1,h2,h3 {
-    color: var(--brown)
+h1,
+h2,
+h3 {
+  color: var(--brown);
 }
 a {
-    color: var(--green);
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
-    text-decoration: underline;
-}
-.anchor {
-    display: block;
-    position: relative;
-    top: -50px;
+  text-decoration: underline;
 }
 header {
-    display: flex;
-    font-size: x-large;
-    padding: 6px 16px;
-    top: 0;
-    border-bottom: 1px solid var(--gray)
+  display: flex;
+  font-size: x-large;
+  padding: 6px 16px;
+  top: 0;
+  border-bottom: 1px solid var(--gray);
 }
 header img {
-    height: 70px;
-    box-shadow: none;
+  height: 70px;
+  box-shadow: none;
 }
 header a {
-    margin-right: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--brown);
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown);
 }
 nav {
-    font-size: x-large;
-    color: var(--brown)
+  font-size: x-large;
+  color: var(--brown);
 }
 nav li {
-    padding: 16px;
-    border-bottom: 1px solid var(--gray)
+  padding: 16px;
+  border-bottom: 1px solid var(--gray);
 }
 nav a {
-    color: var(--brown);
+  color: var(--brown);
 }
 hr {
-    border-top: 1px solid var(--green);
-    margin: 24px;
+  border-top: 1px solid var(--green);
+  margin: 24px;
 }
 
 img {
-    max-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 ul {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 ul li {
-    margin: 16px;
+  margin: 16px;
 }
 ul.checked {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 ul.checked li::before {
-    font-family: 'FontAwesome';
-    content: '\f058';
-    margin: 0 0.5em 0 -1.5em;
-    color: var(--green);
+  font-family: "FontAwesome";
+  content: "\f058";
+  margin: 0 0.5em 0 -1.5em;
+  color: var(--green);
 }
 .header-title {
-    margin: auto;
+  margin: auto;
 }
 .menu-button {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 .menu-button:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 #mobile-menu {
-    display: none;
-    z-index: 2;
+  display: none;
+  z-index: 2;
 }
 img.rounded {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
 }
 img.footer {
-    width: 70%;
-    max-width: 250px;
-    padding: 16px;
+  width: 70%;
+  max-width: 250px;
+  padding: 16px;
 }
 .image-container {
-    position: relative;
-    padding-bottom: 5px;
-    max-width: 500px;
+  position: relative;
+  padding-bottom: 5px;
+  max-width: 500px;
+}
+.image-container-small {
+  position: relative;
+  padding-bottom: 5px;
+  max-width: 300px;
 }
 .image-text {
-    position: absolute;
-    background-color: black;
-    color: white;
-    padding: 8px 10px;
-    opacity: .7;
-    font-size: small;
-    top: 5px;
-    left: 5px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  opacity: 0.7;
+  font-size: small;
+  top: 5px;
+  left: 5px;
 }
 .open {
-    background-color: green;
+  background-color: green;
 }
 .card {
-    padding: 16px;
-    margin: 16px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+  border: thin solid var(--gray);
+  border-radius: 6px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 .card i {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .contact {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    border: thin solid var(--gray);
-    border-radius: 6px;
-    padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border: thin solid var(--gray);
+  border-radius: 6px;
+  padding: 16px;
+}
+.contact-card {
+  font-size: 1.5rem;
+}
+.contact-card a {
+  margin: 0 12px;
 }
 .contact-icons {
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-icons a {
-    margin-left: 16px;
+  margin-left: 24px;
 }
 button {
-    border: none;
-    padding: 8px;
-    color: white;
-    background-color: var(--green);
-    cursor: pointer;
-    width: 50%;
-    border-radius: 6px;
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: var(--green);
+  cursor: pointer;
+  width: 50%;
+  border-radius: 6px;
 }
 button:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 footer {
-    padding: 0 16px;
-    text-align: center;
-    color: var(--green);
+  padding: 0 16px;
+  text-align: center;
+  color: var(--green);
 }
 footer img {
-    margin-bottom: 8px;
-    box-shadow: none;
+  margin-bottom: 8px;
+  box-shadow: none;
 }
 
 ::selection {
-    background: var(--green);
-    color: white;
-  }
+  background: var(--green);
+  color: white;
+}
 ::-moz-selection {
-    background: var(--green);
-    color: white;
+  background: var(--green);
+  color: white;
 }
 
 table {
-    border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 16px;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 16px;
 }
 thead tr {
-    background-color: var(--green);
-    color: #ffffff;
-    text-align: left;
+  background-color: var(--green);
+  color: #ffffff;
+  text-align: left;
 }
-th, td {
-    padding: 12px 24px;
-    text-align: center;
-}
-tbody tr {
-    border-bottom: thin solid #dddddd;
+th,
+td {
+  padding: 12px 24px;
+  text-align: center;
 }
 tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
