@@ -202,21 +202,26 @@ footer img {
   color: white;
 }
 
+/* ==== TABLES ==== */
+
 table {
-  border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin: 16px;
+    border-collapse:separate;
+    border:solid var(--gray) thin;
+    border-radius:6px;
 }
-thead tr {
-  background-color: var(--green);
-  color: #ffffff;
-  text-align: left;
+
+td, th {
+    border-left:solid var(--gray) thin;
+    border-top:solid var(--gray) thin;
 }
-th,
-td {
-  padding: 12px 24px;
-  text-align: center;
+
+th {
+    /* background-color: blue; */
+    color: var(--green);
+    border-top: none;
 }
-tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+
+td:first-child, th:first-child {
+     border-left: none;
 }
+
